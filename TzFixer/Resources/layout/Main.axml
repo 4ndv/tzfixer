@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Press button to get timezone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tzText" />
+    <TextView
+        android:text="Current fixed timezone:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentFixed" />
+    <Button
+        android:id="@+id/getTimezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press me to get current timezone" />
+    <Button
+        android:text="Press me to set this timezone as target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fixTimezone"
+        android:enabled="false" />
+    <Button
+        android:text="Disable TzFixer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disableButton" />
+    <Button
+        android:text="Close (use this button except of force close!)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/closeButton"
+        android:clickable="true" />
+</LinearLayout>
